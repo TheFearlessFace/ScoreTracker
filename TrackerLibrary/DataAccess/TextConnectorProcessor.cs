@@ -187,6 +187,7 @@ namespace TrackerLibrary.DataAccess.TextHelpers
             {
                 lines.Add($"{ t.Id },{ t.TeamName },{ ConvertPeopleListToString(t.TeamMembers) }");
             }
+            //todo: test file exists
             File.WriteAllLines(GlobalConfig.TeamFile.FullFilePath(), lines);
         }
 
